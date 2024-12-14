@@ -1,6 +1,4 @@
 -> Introduction to Flask Web Framework Course  
-   -> Course Duration: 9 minutes  
-   -> Instructor: Brandon Gigous  
    -> This course is designed to teach you how to build a web application using the Flask framework in Python, focusing on hands-on learning with practical examples  
 
 -> Why Learn Flask?  
@@ -19,7 +17,7 @@
       if __name__ == "__main__":  
           app.run(debug=True)  
       ```  
-   -> FlaskÕs compatibility with Python makes it ideal for beginners and experienced developers alike  
+   -> Flask's compatibility with Python makes it ideal for beginners and experienced developers alike  
 
 -> Prerequisites  
    -> Basic programming knowledge, especially in Python. For instance, familiarity with Python functions:  
