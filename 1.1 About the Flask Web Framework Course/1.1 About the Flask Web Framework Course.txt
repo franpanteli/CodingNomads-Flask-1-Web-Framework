@@ -1,136 +1,135 @@
--> Introduction to Flask Web Framework Course  
-   -> This course is designed to teach you how to build a web application using the Flask framework in Python, focusing on hands-on learning with practical examples  
+-> introduction to flask web framework course
+  -> this course is designed to teach you how to build a web application using the flask framework in python, focusing on hands-on learning with practical examples
 
--> Why Learn Flask?  
-   -> Flask is a lightweight yet powerful Python web framework, suitable for building web applications and data science project dashboards  
-   -> It is used by major companies like Netflix, Reddit, and Lyft for its simplicity and scalability  
-   -> Flask allows developers to create web applications with minimal code. For example:  
+-> why learn flask?
+  -> flask is a lightweight yet powerful python web framework, suitable for building web applications and data science project dashboards
+  -> it is used by major companies like netflix, reddit, and lyft for its simplicity and scalability
+  -> flask allows developers to create web applications with minimal code. for example:
 
-      ```python
-      from flask import Flask  
-      app = Flask(__name__)  
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
 
-      @app.route("/")  
-      def home():  
-          return "Welcome to Flask!"  
+    @app.route("/")
+    def home():
+      return "Welcome to Flask!"
 
-      if __name__ == "__main__":  
-          app.run(debug=True)  
-      ```  
-   -> Flask's compatibility with Python makes it ideal for beginners and experienced developers alike  
+    if __name__ == "__main__":
+      app.run(debug=True)
+    ```
+  -> flask's compatibility with python makes it ideal for beginners and experienced developers alike
 
--> Prerequisites  
-   -> Basic programming knowledge, especially in Python. For instance, familiarity with Python functions:  
+-> prerequisites
+  -> basic programming knowledge, especially in python. for instance, familiarity with python functions:
 
-      ```python
-      def greet(name):  
-          return f"Hello, {name}!"  
-      print(greet("Alice"))  
-      ```  
-   -> Understanding of HTML and CSS to design web interfaces  
-   -> Basic knowledge of databases (e.g., tables, queries) and web concepts (e.g., HTTP, URLs)  
-   -> Experience using the command line to navigate directories and execute scripts  
-   -> Familiarity with version control using Git and GitHub for managing code changes  
+    ```python
+    def greet(name):
+      return f"Hello, {name}!"
+    print(greet("Alice"))
+    ```
+  -> understanding of html and css to design web interfaces
+  -> basic knowledge of databases (e.g., tables, queries) and web concepts (e.g., http, urls)
+  -> experience using the command line to navigate directories and execute scripts
+  -> familiarity with version control using git and github for managing code changes
 
--> Python Programming Requirements  
-   -> At least 3 months of Python experience is recommended. You should understand:  
-      -> Packages and modules:  
-
-         ```python
-         import math  
-         print(math.sqrt(16))  
-         ```  
-      -> Functions and decorators:  
-
-         ```python
-         def decorator(func):  
-             def wrapper():  
-                 print("Before function")  
-                 func()  
-                 print("After function")  
-             return wrapper  
-
-         @decorator  
-         def say_hello():  
-             print("Hello!")  
-
-         say_hello()  
-         ```  
-      -> Object-oriented programming concepts like classes and inheritance  
-
-   -> Beginners with experience in languages like Java or Ruby can adapt to Flask easily  
-
--> Command Line  
-   -> Comfort with using CLI is essential for tasks like creating directories, running Python scripts, and installing libraries  
-
-      ```bash
-      mkdir flask_app  
-      cd flask_app  
-      python3 -m venv venv  
-      source venv/bin/activate  
-      pip install flask  
-      ```  
-
--> Git and GitHub  
-   -> Basic understanding of Git commands like `git init`, `git commit`, and `git push`  
-   -> You will use GitHub to store and update your project as it evolves  
-
--> Course Structure  
-   -> The course follows a "read, watch, and do" approach:  
-      -> Read documentation to understand concepts  
-      -> Watch video tutorials for demonstrations  
-      -> Complete assignments and quizzes to apply knowledge  
-
--> Course Objectives  
-   -> Develop a music-sharing social networking app called "Ragtime"  
-   -> Learn to use RESTful APIs to integrate functionalities  
-   -> Manage databases using Flask-SQLAlchemy  
+-> python programming requirements
+  -> at least 3 months of python experience is recommended. you should understand:
+    -> packages and modules:
 
       ```python
-      from flask_sqlalchemy import SQLAlchemy  
-      app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///example.db"  
-      db = SQLAlchemy(app)  
-
-      class User(db.Model):  
-          id = db.Column(db.Integer, primary_key=True)  
-          name = db.Column(db.String(80), nullable=False)  
-      ```  
-
-   -> Authenticate users and manage roles using Flask extensions  
-   -> Deploy the application on Heroku  
-
--> Key Concepts Covered  
-   -> Setting up Flask and creating virtual environments  
-   -> Using Jinja2 for templating and Bootstrap for front-end design  
-   -> Error handling and advanced database relationships  
-   -> Testing applications to ensure reliability  
-   -> Deploying applications on cloud platforms like Heroku  
-
--> End Goals  
-   -> Build professional-grade web apps with Python and Flask  
-   -> Create visually appealing templates using Flask and Bootstrap  
-   -> Write and test robust, scalable code  
-
--> Mentorship Programme  
-   -> The CodingNomads mentorship programme offers:  
-      -> Weekly 1-on-1 sessions for personalised guidance  
-      -> Access to experts via Discord for troubleshooting and advice  
-      -> Accountability and feedback to ensure progress  
-
--> Summary  
-   -> This course equips you with skills to build, test, and deploy Flask applications. For example, creating APIs:  
+      import math
+      print(math.sqrt(16))
+      ```
+    -> functions and decorators:
 
       ```python
-      from flask import Flask, jsonify  
+      def decorator(func):
+        def wrapper():
+          print("Before function")
+          func()
+          print("After function")
+        return wrapper
 
-      app = Flask(__name__)  
+      @decorator
+      def say_hello():
+        print("Hello!")
 
-      @app.route("/api/data", methods=["GET"])  
-      def get_data():  
-          return jsonify({"data": "Sample Data"})  
+      say_hello()
+      ```
+    -> object-oriented programming concepts like classes and inheritance
 
-      if __name__ == "__main__":  
-          app.run(debug=True)  
-      ```  
+  -> beginners with experience in languages like java or ruby can adapt to flask easily
 
-   -> Next, explore how Flask simplifies web development as a microframework  
+-> command line
+  -> comfort with using cli is essential for tasks like creating directories, running python scripts, and installing libraries
+
+    ```bash
+    mkdir flask_app
+    cd flask_app
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install flask
+    ```
+
+-> git and github
+  -> basic understanding of git commands like `git init`, `git commit`, and `git push`
+  -> you will use github to store and update your project as it evolves
+
+-> course structure
+  -> the course follows a "read, watch, and do" approach:
+    -> read documentation to understand concepts
+    -> watch video tutorials for demonstrations
+    -> complete assignments and quizzes to apply knowledge
+
+-> course objectives
+  -> develop a music-sharing social networking app called "ragtime"
+  -> learn to use restful apis to integrate functionalities
+  -> manage databases using flask-sqlalchemy
+
+    ```python
+    from flask_sqlalchemy import SQLAlchemy
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///example.db"
+    db = SQLAlchemy(app)
+
+    class User(db.Model):
+      id = db.Column(db.Integer, primary_key=True)
+      name = db.Column(db.String(80), nullable=False)
+    ```
+
+  -> authenticate users and manage roles using flask extensions
+  -> deploy the application on heroku
+
+-> key concepts covered
+  -> setting up flask and creating virtual environments
+  -> using jinja2 for templating and bootstrap for front-end design
+  -> error handling and advanced database relationships
+  -> testing applications to ensure reliability
+  -> deploying applications on cloud platforms like heroku
+
+-> end goals
+  -> build professional-grade web apps with python and flask
+  -> create visually appealing templates using flask and bootstrap
+  -> write and test robust, scalable code
+
+-> mentorship programme
+  -> the codingnomads mentorship programme offers:
+    -> weekly 1-on-1 sessions for personalised guidance
+    -> access to experts via discord for troubleshooting and advice
+    -> accountability and feedback to ensure progress
+
+-> summary
+  -> this course equips you with skills to build, test, and deploy flask applications. for example, creating apis:
+
+    ```python
+    from flask import Flask, jsonify
+    app = Flask(__name__)
+
+    @app.route("/api/data", methods=["GET"])
+    def get_data():
+      return jsonify({"data": "Sample Data"})
+
+    if __name__ == "__main__":
+      app.run(debug=True)
+    ```
+
+  -> next, explore how flask simplifies web development as a microframework
